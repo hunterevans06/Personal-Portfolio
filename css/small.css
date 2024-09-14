@@ -1,0 +1,195 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    --lightWeight: 300;
+    --heavyWeight: 700;
+    --primaryColor: #263238;
+    --secondaryColor: #78909C;
+    --thirdColor: white;
+}
+
+
+/*Navigation starts here*/
+nav {
+
+    position: sticky;
+    top: 0px;
+    background-color: var(--primaryColor);
+}
+
+nav ul{
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    color: white;
+}
+
+nav a {
+    padding: .8rem .5rem;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: var(--heavyWeight);
+}
+
+nav a:hover {
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+
+}
+
+
+
+
+
+/*About Section Starts Here*/
+
+section#about {
+    background-color: var(--secondaryColor);
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#about h1 {
+    font-size: 2.5rem;
+}
+
+section#about h2 {
+    font-size: 2.5rem;
+    color: black;
+}
+/*About Section Ends Here*/
+
+
+
+
+
+/*Projects Section Starts Here*/
+
+section#projects {
+    background-color: var(--thirdColor);
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+section#projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+div.theParent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+div.theParent a {
+    flex-basis: 100%;
+    padding: 2rem 4vw;
+    text-decoration: none;
+}
+
+section#projects figure {
+    margin: 0;
+    width: 100%;
+
+}
+
+section#projects img {
+    width: 100%;
+}
+
+section#projects a {
+    color: var(--primaryColor);
+    transition: transform 0.2s ease-in-out;
+}
+
+section#projects a:hover {
+    text-decoration: underline;
+    transform: translateY(11px);
+}
+
+/*Projects Section Ends Here*/
+
+/*Contact Section Starts Here*/
+
+section#contact {
+    background-color: var(--secondaryColor);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+section#contact h2 {
+    text-align: center;
+    font-size: 3.5rem;
+
+}
+
+section#contact ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+section#contact a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+section#contact a img {
+    height: 50px;
+    display: block;
+    width: 100%;
+
+}
+
+section#contact a:hover {
+    text-decoration: underline;
+    transform: translateY(11px);
+    
+}
+
+
+footer {
+    background-color: var(--primaryColor);
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+footer a {
+    color: white;
+}
+
+
+
+
+
+
+
+/*Contact Section Ends Here*/
