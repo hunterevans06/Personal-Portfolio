@@ -102,8 +102,8 @@ div.theParent {
 }
 
 div.theParent a {
-    flex-basis: 100%;
-    padding: 2rem 4vw;
+    flex-basis: 16.67%;
+    padding: 1rem 2vw;
     text-decoration: none;
 }
 
